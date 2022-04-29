@@ -36,7 +36,7 @@ public class objets implements Comparable<objets> {
      
     public String affiche_x() {
          
-         return " x" + this.indice+" = 1" ;
+         return "  x" + (this.indice+1)+" = 1" ;
      }
 
     public int compareTo(objets obj) {
