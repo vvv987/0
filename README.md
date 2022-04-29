@@ -90,5 +90,5 @@ la solution optimale de P :
 
 
 
-# Question 6
+## Question 6
 l'affichage de l’arbre de séparation (l’arborescence de résolution)
