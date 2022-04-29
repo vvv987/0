@@ -2,13 +2,13 @@
 ## Question 1
 l’algorithme de Tri des objets en ordre décroissant du rapport ci/ p :
 
-``  
+```
 
 import java.util.Collections;
 
 Collections.sort(liste_d_objets); 
 
-``
+```
 
 # Question 2
 la fonction de recherche d’une solution initiale:
