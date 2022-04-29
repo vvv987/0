@@ -38,8 +38,28 @@ la fonction de recherche d’une solution initiale :
 ```
 
 ## Question 3
-# fonction de séparation
-# fonction d’évaluation
+ - ### fonction de séparation :
+ 
+ ```
+
+Noeud  right , left;
+
+        if (superieure() > Best && !this.list_objets_rest.isEmpty() && nextobjet() ) {
+        	
+        	left = new Noeud(this.list_objets,this.list_objets_rest,  true);
+        	right = new Noeud(this.list_objets,this.list_objets_rest,  false);
+
+        } 
+        else if (superieure() > Best && !this.list_objets_rest.isEmpty() && !nextobjet() ) {
+        	
+        	left = new Noeud( this.list_objets,this.list_objets_rest, true);
+        	right = null;
+
+        } 
+        else  left = right = null; 
+
+```
+ - ### fonction d’évaluation
 
 # Question 4
 l'implémentation de la méthode de Branch & bound
