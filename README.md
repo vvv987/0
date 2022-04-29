@@ -82,8 +82,12 @@ l'implémentation de la méthode de Branch & bound :
     
 ```
 
-# Question 5
+## Question 5
 la solution optimale de P : 
+ - le solution : (1,0,1,0,0,1) /  z = 37.0 (utulite)
+![image](https://user-images.githubusercontent.com/104647979/166069785-f764f7ae-3e07-47a1-9170-3827376e504f.png)
+
+
 
 # Question 6
 l'affichage de l’arbre de séparation (l’arborescence de résolution)
