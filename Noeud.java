@@ -6,7 +6,7 @@ import java.util.Scanner;
 class Noeud {
 	
 	
-	static List<objets> Best_objets;
+    static List<objets> Best_objets;
     static float Best;
     private static float P_max;
     private List<objets> list_objets_rest;
@@ -18,7 +18,7 @@ class Noeud {
         this.list_objets_rest = new ArrayList<>(objets);
         this.list_objets = new ArrayList<>();
         this.P_max = P_max;
-// this
+
         la_separation();
     }
 
