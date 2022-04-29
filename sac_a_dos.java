@@ -53,18 +53,20 @@ public class sac_a_dos {
         Scanner obj = new Scanner(System.in);
         System.out.println(" - Tapez les details des objets :");
         
+	cmp = 1;   
         for(int i = 0 ; i < nbr ; i++) {
         	
-                System.out.print("le Poid : ");
+                System.out.print("le Poid de l'objet "  + cmp + " : );
                 poids = obj.nextInt();
                 
-                System.out.print("l'utilite : ");
+                System.out.print("l'utilite de l'objet "  + cmp + " : );
                 utilite= obj.nextInt();
                 
                 Objet = new objets(poids,utilite,i);
                
                 liste_d_objets.add(Objet);
                 System.out.println();
+		cmp++;
             }
    
     }
