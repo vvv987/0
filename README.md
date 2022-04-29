@@ -1,9 +1,12 @@
 # 0
 ## Question 1
-l’algorithme de Tri des objets en ordre décroissant du rapport ci/ p
+l’algorithme de Tri des objets en ordre décroissant du rapport ci/ p :
 
 ``
-Collections.sort(liste_d_objets);  
+import java.util.Collections;
+
+Collections.sort(liste_d_objets); 
+
 ``
 
 # Question 2
