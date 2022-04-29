@@ -89,6 +89,8 @@ le poid = 17
 
 x1 = 1 | x2 = 1 | x3 = 0 | x4 = 0 | x5 = 0 | x6 = 1 
 
+![image](https://user-images.githubusercontent.com/104647979/166071199-4bf2f71e-2edf-46ef-8633-180aab8b8d5d.png)
+
 
 # Question 6
 l'affichage de l’arbre de séparation (l’arborescence de résolution)
