@@ -6,7 +6,7 @@ import java.util.Scanner;
 class Noeud {
 	
 	
-    static List<objets> Best_objets;
+	static List<objets> Best_objets;
     static float Best;
     private static float P_max;
     private List<objets> list_objets_rest;
@@ -18,9 +18,34 @@ class Noeud {
         this.list_objets_rest = new ArrayList<>(objets);
         this.list_objets = new ArrayList<>();
         this.P_max = P_max;
-
+// this
         la_separation();
     }
+    private boolean evaluation() {
+    	return (superieure() > Best);
+    	
+    }
+ 
+    private void la_separation() {
+
+    	Noeud  right , left;
+
+        if (evaluation() && !this.list_objets_rest.isEmpty() && nextobjet() ) {
+        	
+        	left = new Noeud(this.list_objets,this.list_objets_rest,  true);
+        	right = new Noeud(this.list_objets,this.list_objets_rest,  false);
+
+        } 
+        else if (evaluation()  && !this.list_objets_rest.isEmpty() && !nextobjet() ) {
+        	
+        	left = new Noeud( this.list_objets,this.list_objets_rest, true);
+        	right = null;
+
+        } 
+        else  left = right = null;
+         
+    }
+
 
     private Noeud(List<objets> list_objets, List<objets> list_objets_rest,  boolean left) {
 
@@ -46,31 +71,6 @@ class Noeud {
     }
     
     
- private boolean evaluation() {
-    	return (superieure() > Best);
-    	
-    }
- 
-    private void la_separation() {
-
-    	Noeud  right , left;
-
-        if (evaluation() && !this.list_objets_rest.isEmpty() && nextobjet() ) {
-        	
-        	left = new Noeud(this.list_objets,this.list_objets_rest,  true);
-        	right = new Noeud(this.list_objets,this.list_objets_rest,  false);
-
-        } 
-        else if (evaluation()  && !this.list_objets_rest.isEmpty() && !nextobjet() ) {
-        	
-        	left = new Noeud( this.list_objets,this.list_objets_rest, true);
-        	right = null;
-
-        } 
-        else  left = right = null;
-         
-    }
-
     // la borne superieure :
     private float superieure() {
     	
