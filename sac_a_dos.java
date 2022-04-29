@@ -64,6 +64,7 @@ public class sac_a_dos {
                 Objet = new objets(poids,utilite,i);
                
                 liste_d_objets.add(Objet);
+                System.out.println();
             }
    
     }
@@ -71,7 +72,7 @@ public class sac_a_dos {
    // la fonction d'affichage de solution :
    
     public void AfficheSolution() {
-    	
+    	System.out.println();
     	System.out.println(" la meilleure solution realisable : ");
     	
     	Poid_optimale();
@@ -79,9 +80,9 @@ public class sac_a_dos {
         for (objets obj : liste_d_objets_best) 
             System.out.println(obj.affiche_x());
            
-     // System.out.println("les autres valeurs = null");
+     
       
-      System.out.println("le poids : " + poids_optimale + " et  Z = : " + valeur_optimale);
+      System.out.println("le poids : " + poids_optimale + " et  Z =  " + valeur_optimale);
        
     }
     
@@ -90,14 +91,14 @@ public class sac_a_dos {
     float gauche = this.P_max;
     float z = 0;
     
-   
+    System.out.println();
     System.out.println(" la solution initiale de ce sac a dos :  ");
     
     for(objets obj : liste_objets)
     { 
         if(obj.getPoids() <= gauche){
         	
-        	System.out.println("  x"+ obj.getIndice()+" = 1");
+        	System.out.println("  x"+ (obj.getIndice()+1)+" = 1");
             gauche = gauche - obj.getPoids();
              z = z+ obj.getUtulite();
         }
@@ -111,7 +112,7 @@ public class sac_a_dos {
             System.out.println("  x"+ obj.getIndice()+" = 0 ");
             
     }
-      System.out.println(" Z = " + z);
+      System.out.println(" Z  " + z);
      
       }
    
@@ -147,7 +148,7 @@ public class sac_a_dos {
     }
 
    
-    // l'implementation de la methode Branch & Bround :
+    // la methode Branch & Bround :
     public void Branch_Bround() {
     	
     	// 1/ le trie des objet :
