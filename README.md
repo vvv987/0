@@ -1,6 +1,6 @@
 # 0
 ## Question 1
-l’algorithme de Tri des objets en ordre décroissant du rapport ci/ p :
+l’algorithme de Tri des objets en ordre décroissant du rapport ci/ Pi :
 
 ```
 
@@ -10,8 +10,32 @@ Collections.sort(liste_d_objets);
 
 ```
 
-# Question 2
-la fonction de recherche d’une solution initiale:
+## Question 2
+la fonction de recherche d’une solution initiale :  
+ - on soustraire les poids d'objet par ordre de poids max , jusqu'a a ou le poid reste disponible est null 
+
+```
+
+ for(objets obj : liste_objets)
+    { 
+        if(obj.getPoids() <= gauche){
+        	
+        	System.out.println("  x"+ obj.getIndice()+" = 1");
+            gauche = gauche - obj.getPoids();
+             z = z+ obj.getUtulite();
+        }
+        else if(obj.getPoids()>gauche && gauche!=0 ){
+        	
+            System.out.println("  x"+obj.getIndice()+" = "+ gauche/obj.getPoids());
+            z=z+obj.getUtulite()*(gauche/obj.getPoids());
+            gauche=0;
+        } 
+        else
+            System.out.println("  x"+ obj.getIndice()+" = 0 ");
+            
+    } 
+
+```
 
 # Question 3
 # fonction de séparation
