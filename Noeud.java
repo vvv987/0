@@ -22,28 +22,6 @@ class Noeud {
         la_separation();
     }
 
- 
-    private void la_separation() {
-
-    	Noeud  right , left;
-
-        if (superieure() > Best && !this.list_objets_rest.isEmpty() && nextobjet() ) {
-        	
-        	left = new Noeud(this.list_objets,this.list_objets_rest,  true);
-        	right = new Noeud(this.list_objets,this.list_objets_rest,  false);
-
-        } 
-        else if (superieure() > Best && !this.list_objets_rest.isEmpty() && !nextobjet() ) {
-        	
-        	left = new Noeud( this.list_objets,this.list_objets_rest, true);
-        	right = null;
-
-        } 
-        else  left = right = null;
-         
-    }
-
-
     private Noeud(List<objets> list_objets, List<objets> list_objets_rest,  boolean left) {
 
          
@@ -68,6 +46,31 @@ class Noeud {
     }
     
     
+ private boolean evaluation() {
+    	return (superieure() > Best);
+    	
+    }
+ 
+    private void la_separation() {
+
+    	Noeud  right , left;
+
+        if (evaluation() && !this.list_objets_rest.isEmpty() && nextobjet() ) {
+        	
+        	left = new Noeud(this.list_objets,this.list_objets_rest,  true);
+        	right = new Noeud(this.list_objets,this.list_objets_rest,  false);
+
+        } 
+        else if (evaluation()  && !this.list_objets_rest.isEmpty() && !nextobjet() ) {
+        	
+        	left = new Noeud( this.list_objets,this.list_objets_rest, true);
+        	right = null;
+
+        } 
+        else  left = right = null;
+         
+    }
+
     // la borne superieure :
     private float superieure() {
     	
