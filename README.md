@@ -82,7 +82,7 @@ l'implémentation de la méthode de Branch & bound :
     
 ```
 
-# Question 5
+## Question 5
 la solution optimale de P : Z = : 37.0  (1,1,0,0,0,1)
 
 le poid = 17
