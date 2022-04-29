@@ -12,7 +12,7 @@ Collections.sort(liste_d_objets);
 
 ## Question 2
 la fonction de recherche d’une solution initiale :  
- - on soustraire les poids d'objet par ordre de poids max , jusqu'a a ou le poid reste disponible est null 
+ - on soustraire les poids d'objet par ordre de poids max , jusqu'a ou le poid reste disponible est null 
 
 ```
 
@@ -37,7 +37,7 @@ la fonction de recherche d’une solution initiale :
 
 ```
 
-# Question 3
+## Question 3
 # fonction de séparation
 # fonction d’évaluation
 
