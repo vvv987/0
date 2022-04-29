@@ -66,8 +66,21 @@ Noeud  right , left;
     
 ```
 
-# Question 4
-l'implémentation de la méthode de Branch & bound
+## Question 4
+l'implémentation de la méthode de Branch & bound :
+```
+      	// 1/ le trie des objet :
+       tri();
+       
+        // 2/ la recherche de la solution initiale :
+       solution_initiale(P_max,liste_d_objets);
+       
+       // 3/ le recuperation de la meuilleure solution :
+        new Noeud( P_max ,liste_d_objets);
+        valeur_optimale = Noeud.Best;
+        liste_d_objets_best = new ArrayList<>(Noeud.Best_objets);
+    
+```
 
 # Question 5
 la solution optimale de P : 
