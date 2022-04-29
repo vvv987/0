@@ -104,12 +104,12 @@ public class sac_a_dos {
         }
         else if(obj.getPoids()>gauche && gauche!=0 ){
         	
-            System.out.println("  x"+obj.getIndice()+" = "+ gauche/obj.getPoids());
+            System.out.println("  x"+(obj.getIndice()+1)+" = "+ gauche/obj.getPoids());
             z=z+obj.getUtulite()*(gauche/obj.getPoids());
             gauche=0;
         } 
         else
-            System.out.println("  x"+ obj.getIndice()+" = 0 ");
+            System.out.println("  x"+ (obj.getIndice()+1)+" = 0 ");
             
     }
       System.out.println(" Z  " + z);
@@ -164,6 +164,8 @@ public class sac_a_dos {
     }
     
 }
+
+
 
 
 
