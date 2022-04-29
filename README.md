@@ -61,6 +61,11 @@ Noeud  right , left;
 ```
  - ### fonction d’évaluation
 
+```
+    	return (superieure() > Best);
+    
+```
+
 # Question 4
 l'implémentation de la méthode de Branch & bound
 
